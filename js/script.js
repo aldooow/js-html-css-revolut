@@ -4,6 +4,7 @@ $(document).ready(
     $('.with-dropdown').mouseenter(
       function(){
         $(this).children('.dropdown').toggleClass('open');
+        $('.dropdown').removeClass('open')
       }
     )
 
