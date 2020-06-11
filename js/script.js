@@ -2,7 +2,7 @@ $(document).ready(
 
 
   function(){
-    // Click nel "document" per nascondere le opzioni.
+    // Click nel "document" per nascondere le opzioni. *
     $(document).click(
       function(){
         $('.dropdown').removeClass('open');
