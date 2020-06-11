@@ -21,9 +21,7 @@ button {
   border: 1px solid #0765eb;
   padding: 10px 20px;
 }
-
 ul {
-
   list-style-type: none;
 }
 li {
@@ -49,7 +47,14 @@ a:hover {
 .menu-left {
   float: left;
 }
-
+.notify {
+  padding-left: 10px;
+  font-size: 10px;
+  color: red;
+}
+.burger-menu {
+  display: none
+}
 /* Dropdown */
 .with-dropdown {
   position: relative;
@@ -57,7 +62,7 @@ a:hover {
 .dropdown {
   padding: 15px;
   position: absolute;
-  right: -20px;
+  right: -50px;
   display: none;
   list-style-type: none;
   padding-left: 0;
@@ -71,3 +76,22 @@ a:hover {
   line-height: 30px;
 }
 /* END Dropdown */
+
+/* media query */
+@media screen and (max-width: 890px) {
+  .burger-menu {
+    display: inline-block;
+    float: right;
+  }
+  .menu-right {
+    display: none;
+  }
+  .burger-menu .fas {
+    font-size: 40px;
+  }
+  .dropdown {
+    font-size: 50px;
+    padding: 50px;
+  }
+}
+/* END media query */
